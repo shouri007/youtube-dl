@@ -106,9 +106,9 @@ class YoutubeDL(object):
 
     YoutubeDL objects are the ones responsible for downloading the
     actual video file and writing it to disk if the user has requested
-    it, among some other tasks. In most cases there should be one per
-    program. As, given a video URL, the downloader doesn't know how to
-    extract all the needed information, task that InfoExtractors do, it
+    it, among some other tasks. In most cases there should be one file per
+    program. Given a video URL,as the downloader doesn't know how to
+    extract all the needed information(work of InfoExtractors), it
     has to pass the URL to one of them.
 
     For this, YoutubeDL objects have a method that allows
@@ -116,7 +116,7 @@ class YoutubeDL(object):
     a URL, the YoutubeDL object handles it to the first InfoExtractor it
     finds that reports being able to handle it. The InfoExtractor extracts
     all the information about the video or videos the URL refers to, and
-    YoutubeDL process the extracted information, possibly using a File
+    YoutubeDL processes the extracted information, possibly using a File
     Downloader to download the video.
 
     YoutubeDL objects accept a lot of parameters. In order not to saturate
